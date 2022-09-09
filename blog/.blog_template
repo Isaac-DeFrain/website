@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quantifier | about</title>
-  <link rel="stylesheet" href="./css/main_styles.css">
-  <link rel="stylesheet" href="./css/navbar_styles.css">
-  <link rel="stylesheet" href="./css/about_styles.css">
+  <title>Quantifier | blog</title>
+  <link rel="stylesheet" href="../css/main_styles.css">
+  <link rel="stylesheet" href="../css/navbar_styles.css">
+  <link rel="stylesheet" href="../css/blog_styles.css">
 </head>
 <body>
   <div class="container">
@@ -15,7 +15,7 @@
       <div class="left-side">
         <div class="brand">
           <div class="brand-logo-wrapper">
-            <img src="images/universal-quantifier-for-all.png">
+            <img src="../images/universal-quantifier-for-all.png">
           </div>
         </div>
       </div>
@@ -23,16 +23,16 @@
       <!-- right column -->
       <div class="right-side">
         <div class="nav-link-wrapper">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="../about.html">About</a>
         </div>
         <div class="nav-link-wrapper active-nav-link">
-          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
         </div>
         <div class="nav-link-wrapper">
-          <a href="blog/blog.html">Blog</a>
-        </div>
-        <div class="nav-link-wrapper">
-          <a href="contact.html">Contact</a>
+          <a href="../contact.html">Contact</a>
         </div>
         <div class="nav-link-wrapper">
           <a href="https://www.github.com/Isaac-DeFrain">GitHub</a>
@@ -40,28 +40,13 @@
       </div>
     </div>
 
-    <!-- Content 1 -->
-    <div class="about-content-wrapper">
-      <div class="about-img-wrapper">
-        <img src="images/portfolio/profile_picture.jpg"/>
-      </div>
-      <div class="about-wrapper">
-        <div class="about-text">
-          About me -- TODO
-        </div>
-      </div>
-    </div>
+    <!-- Content -->
+    <div class="blog-content-wrapper">
+      <!-- Table of contents -->
+      {toc}
 
-    <!-- Content 2 -->
-    <div class="about-content-wrapper">
-      <div class="about-img-wrapper">
-        <img src="images/portfolio/blue_purple_galaxy.jpg"/>
-      </div>
-      <div class="about-wrapper">
-        <div class="about-text">
-          About stuff I like -- TODO
-        </div>
-      </div>
+      <!-- Article descriptions -->
+      {articles}
     </div>
 
     <!-- Footer nav bar -->
@@ -78,16 +63,16 @@
       <!-- right column -->
       <div class="right-side">
         <div class="nav-link-wrapper">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="../about.html">About</a>
         </div>
         <div class="nav-link-wrapper active-nav-link">
-          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
         </div>
         <div class="nav-link-wrapper">
-          <a href="blog/blog.html">Blog</a>
-        </div>
-        <div class="nav-link-wrapper">
-          <a href="contact.html">Contact</a>
+          <a href="../contact.html">Contact</a>
         </div>
         <div class="nav-link-wrapper">
           <a href="https://www.github.com/Isaac-DeFrain">GitHub</a>

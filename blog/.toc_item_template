@@ -1,0 +1,5 @@
+        <div class="blog-toc-item-wrapper">
+          <a href="html/{fname}">
+            {name}
+          </a>
+        </div>

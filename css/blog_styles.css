@@ -4,42 +4,117 @@
 
 .blog-content-wrapper {
   display: grid;
-  grid-template-columns: 128px max-content;
+  grid-template-columns: 220px max-content;
   padding-left: 12px;
   padding-right: 12px;
   bottom: 0;
 }
 
+/*********************/
+/* table of contents */
+/*********************/
+
+.blog-toc-title {
+  display: flex;
+  font-size: 24px;
+  font-weight: 575;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 24px;
+}
+
+.blog-toc-item-wrapper {
+  display: flex;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.blog-toc-item-wrapper a {
+  color: #646464;;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.blog-toc-item-wrapper:hover a {
+  color: #000000;
+}
+
+/*******************************/
+/* blog articles and summaries */
+/*******************************/
+
 .blog-items-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  padding-left: 12px;
+  padding-left: 52px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  border-left: 1px solid #000000;
 }
 
 .blog-item-wrapper {
   position: relative;
   padding-top: 16px;
-  padding-left: 5px;
   padding-right: 5px;
-}
-
-.article-body {
-  padding: 42px;
-  padding-top: 0px;
-}
-
-.blog-toc-title {
   padding-bottom: 7px;
 }
 
-.blog-toc-item-wrapper {
+.blog-name {
   display: flex;
-  padding-bottom: 5px;
-  justify-content: center;
+  padding-bottom: 1px;
+  justify-content: flex-start;
 }
 
-/*  */
-
-.article-wrapper {
+.blog-name a {
   display: flex;
+  color: #646464;;
+  text-decoration: none;
+  transition: color 0.5s;
+  justify-content: flex-start;
+  /* padding-bottom: 7px; */
+}
+
+.blog-name:hover a {
+  color: #000000;
+}
+
+.blog-description {
+  display: flex;
+  color: #202020;
+  justify-content: flex-start;
+  padding-top: 3px;
+}
+
+/*******************/
+/* article content */
+/*******************/
+
+.article-content-wrapper {
+  padding-left: 32px;
+}
+
+.article-body h1 {
+  display: flex;
+  font-weight: 570;
+  justify-content: flex-start;
+}
+
+.article-body h2 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 7px;
+}
+
+.article-body h3 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 7px;
+}
+
+.article-body h4 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 7px;
 }

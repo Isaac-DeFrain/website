@@ -3,7 +3,8 @@
 @title: Products, Coproducts, and BNF
 @description:
   Under construction
-  - a list in description
+
+  another paragraph
 @tags:
  - mathematics
  - cateory theory

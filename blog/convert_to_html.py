@@ -9,16 +9,16 @@ import markdown
 def clean_up_name(s):
   return s.replace('_', ' ')
 
-def clean_up_body(s):
+def clean_up_body(s, w):
   res = ''
   lines = s.splitlines()
   for i, l in enumerate(lines):
     if i == 0:
       res += l + '\n'
     elif i == len(lines) - 1:
-      res += ' ' * 8 + l
+      res += ' ' * w + l
     else:
-      res += ' ' * 8 + l + '\n'
+      res += ' ' * w + l + '\n'
   return res
 
 # parse title, name, summary, and tags from md file
@@ -66,7 +66,7 @@ def main():
       fname = fname.replace('.md', '')
       # grab the html template and format it
       with open('.html_template', 'r') as f:
-        html = f.read().format(name=clean_up_name(fname), body=clean_up_body(body))
+        html = f.read().format(name=clean_up_name(fname), body=clean_up_body(body, 8))
         # write html to /html
         with open('./html/' + fname + '.html', 'w') as f:
           f.write(html)

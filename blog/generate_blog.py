@@ -1,4 +1,5 @@
 import os
+import markdown
 import convert_to_html
 
 # convert md to html + metadata
@@ -23,7 +24,8 @@ for fname_html in filter(lambda f: f.endswith('.html'), os.listdir('./html')):
   with open('.article_template', 'r') as f:
     with open('./html/meta/title/' + fname, 'r') as t:
       with open('./html/meta/description/' + fname, 'r') as d:
-        article_items += f.read().format(fname=fname_html, title=t.read(), description=d.read()) + '\n'
+        desc = markdown.markdown(d.read())
+        article_items += f.read().format(fname=fname_html, title=t.read(), description=convert_to_html.clean_up_body(desc, 12))
   # generate toc
   with open('.toc_template', 'r') as f:
     toc = f.read().format(toc_items=toc_items)

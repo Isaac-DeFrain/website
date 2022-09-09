@@ -1,6 +1,5 @@
 <div class="blog-toc-wrapper">
         <div class="blog-toc-title">
           Articles
-        </div>
-{toc_items}
+        </div>{toc_items}
       </div>

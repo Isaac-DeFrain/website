@@ -1,0 +1,25 @@
+/****************/
+/* About styles */
+/****************/
+
+.about-content-wrapper {
+  display: grid;
+  grid-template-columns: 300px max-content;
+}
+
+.about-img-wrapper {
+  display: flex;
+  padding-right: 16px;
+  justify-content: left;
+}
+
+.about-img-wrapper img {
+  height: auto;
+  width: 100%;
+}
+
+.about-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}

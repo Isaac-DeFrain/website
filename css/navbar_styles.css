@@ -1,0 +1,76 @@
+/**************/
+/* Nav styles */
+/**************/
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 24px;
+}
+
+.brand > .brand-logo-wrapper {
+  height: 42px;
+  justify-content: left;
+}
+
+.brand-logo-wrapper img {
+  height: 42px;
+  width: auto;
+}
+
+.brand-name {
+  justify-content: left;
+  font-size: 32px;
+  font-weight: 525;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side > div {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  display: flex;
+  text-align: center;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important
+}

@@ -1,0 +1,18 @@
+/******************/
+/* Contact styles */
+/******************/
+
+.contact-items-wrapper {
+  padding: 24px;
+  padding-top: 0;
+}
+
+.contact-item-wrapper {
+  display: flex;
+  padding-bottom: 7px;
+  justify-content: flex-start;
+}
+
+.contact-item-wrapper a {
+  padding-left: 24px;
+}

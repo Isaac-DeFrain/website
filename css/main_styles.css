@@ -1,0 +1,24 @@
+:root {
+  --ff-primary: sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-header: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+}
+
+/***************/
+/* Main styles */
+/***************/
+
+body {
+  margin: 0px;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}

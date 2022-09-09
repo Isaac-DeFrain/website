@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quantifier | article 3</title>
+  <title>Quantifier | {name}</title>
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="blog_styles.css">
 </head>
 <body>
   <div class="container">
@@ -41,8 +42,7 @@
     <!-- Content -->
     <div class="article-content-wrapper">
       <div class="article-body">
-        <h1>Article 3</h1>
-<p>This is article 3</p>
+        {body}
       </div>
     </div>
   </div>

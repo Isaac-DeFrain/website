@@ -9,17 +9,10 @@ import markdown
 def clean_up_name(s):
   return s.replace('_', ' ')
 
-def clean_up_body(s, w):
-  res = ''
-  lines = s.splitlines()
-  for i, l in enumerate(lines):
-    if i == 0:
-      res += l + '\n'
-    elif i == len(lines) - 1:
-      res += ' ' * w + l
-    else:
-      res += ' ' * w + l + '\n'
-  return res
+def indent(s, n):
+  return reduce(
+    lambda a, b: '{a}\n{w}{b}'.format(a=a, b=b, w=' ' * n),
+    s.splitlines())
 
 # parse title, name, summary, and tags from md file
 def parse_meta(src):
@@ -66,7 +59,7 @@ def main():
       fname = fname.replace('.md', '')
       # grab the html template and format it
       with open('.html_template', 'r') as f:
-        html = f.read().format(name=clean_up_name(fname), body=clean_up_body(body, 8))
+        html = f.read().format(name=clean_up_name(fname), body=indent(body, 8))
         # write html to /html
         with open('./html/' + fname + '.html', 'w') as f:
           f.write(html)

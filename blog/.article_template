@@ -1,11 +1,10 @@
-        
-        <div class="blog-item-wrapper">
-          <div class="blog-name">
-            <a href="html/{fname}">
-              {title}
-            </a>
-          </div>
-          <div class="blog-description">
-            {description}
-          </div>
-        </div>
+<article class="blog-item-wrapper">
+  <div class="blog-name">
+    <a href="html/{fname}">
+      {title}
+    </a>
+  </div>
+  <div class="blog-description">
+    {description}
+  </div>
+</article>
